@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeExtensions", "TypeExtensions\TypeExtensions.csproj", "{BF33C290-E199-4614-BF9A-99DDF69ED90B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeExtensions.Tests", "TypeExtensions.Tests\TypeExtensions.Tests.csproj", "{2207258B-7BD8-4EC2-A79E-53CB5C372E75}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF33C290-E199-4614-BF9A-99DDF69ED90B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF33C290-E199-4614-BF9A-99DDF69ED90B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF33C290-E199-4614-BF9A-99DDF69ED90B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF33C290-E199-4614-BF9A-99DDF69ED90B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2207258B-7BD8-4EC2-A79E-53CB5C372E75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2207258B-7BD8-4EC2-A79E-53CB5C372E75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2207258B-7BD8-4EC2-A79E-53CB5C372E75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2207258B-7BD8-4EC2-A79E-53CB5C372E75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
