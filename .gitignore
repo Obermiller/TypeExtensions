@@ -13,3 +13,5 @@ bld/
 [Oo]bj/
 
 *.user
+*.nupkg
+*.nuspec

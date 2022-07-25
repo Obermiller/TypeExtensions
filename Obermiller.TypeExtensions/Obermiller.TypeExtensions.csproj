@@ -5,6 +5,16 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <RootNamespace>Obermiller.TypeExtensions</RootNamespace>
+        <Title>Obermiller.TypeExtensions</Title>
+        <Authors>Obermiller</Authors>
+        <Description>Collection of extension methods I've found handy over the years</Description>
+        <RepositoryUrl>https://github.com/Obermiller/TypeExtensions</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/Obermiller/TypeExtensions</PackageProjectUrl>
+        <PackageTags>extensions;type-extensions;</PackageTags>
+        <PackageId>Obermiller.TypeExtensions</PackageId>
+        <Version>1.0.0</Version>
+        <Company>Obermiller</Company>
+        <Product>Obermiller.TypeExtensions</Product>
     </PropertyGroup>
 
 </Project>
