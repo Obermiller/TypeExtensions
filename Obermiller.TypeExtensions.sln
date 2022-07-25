@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeExtensions", "TypeExtensions\TypeExtensions.csproj", "{BF33C290-E199-4614-BF9A-99DDF69ED90B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Obermiller.TypeExtensions", "Obermiller.TypeExtensions\Obermiller.TypeExtensions.csproj", "{BF33C290-E199-4614-BF9A-99DDF69ED90B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeExtensions.Tests", "TypeExtensions.Tests\TypeExtensions.Tests.csproj", "{2207258B-7BD8-4EC2-A79E-53CB5C372E75}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Obermiller.TypeExtensions.Tests", "Obermiller.TypeExtensions.Tests\Obermiller.TypeExtensions.Tests.csproj", "{2207258B-7BD8-4EC2-A79E-53CB5C372E75}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

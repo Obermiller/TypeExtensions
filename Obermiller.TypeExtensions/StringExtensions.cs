@@ -1,4 +1,4 @@
-﻿namespace TypeExtensions.String;
+﻿namespace Obermiller.TypeExtensions;
 
 public static class StringExtensions
 {

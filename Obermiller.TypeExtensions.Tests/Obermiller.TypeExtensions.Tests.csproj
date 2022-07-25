@@ -7,7 +7,7 @@
 
         <IsPackable>false</IsPackable>
 
-        <RootNamespace>TypeExtensions.Tests</RootNamespace>
+        <RootNamespace>Obermiller.TypeExtensions.Tests</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -19,7 +19,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\TypeExtensions\TypeExtensions.csproj" />
+      <ProjectReference Include="..\Obermiller.TypeExtensions\Obermiller.TypeExtensions.csproj" />
     </ItemGroup>
 
 </Project>

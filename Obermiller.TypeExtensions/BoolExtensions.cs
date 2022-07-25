@@ -1,4 +1,4 @@
-﻿namespace TypeExtensions.Bool;
+﻿namespace Obermiller.TypeExtensions;
 
 public static class BoolExtensions
 {

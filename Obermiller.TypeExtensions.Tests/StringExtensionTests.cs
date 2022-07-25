@@ -1,6 +1,4 @@
-﻿using TypeExtensions.String;
-
-namespace TypeExtensions.Tests.String;
+﻿namespace Obermiller.TypeExtensions.Tests;
 
 [TestFixture]
 public class StringExtensionTests

@@ -1,6 +1,4 @@
-﻿using TypeExtensions.Bool;
-
-namespace TypeExtensions.Tests.Bool;
+﻿namespace Obermiller.TypeExtensions.Tests;
 
 [TestFixture]
 public class BoolExtensionTests
