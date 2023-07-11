@@ -5,8 +5,8 @@ public class EnumerableExtensionTests
 {
     private static readonly object[] SourceLists = 
     {
-        new object[] { new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 } },
-        new object[] { new List<string> { "blue", "red", "purple", "green" } }
+        new object[] { new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 } },
+        new object[] { new List<string> { "blue", "red", "purple", "green", "purple" } }
     };
     
     [Test]
