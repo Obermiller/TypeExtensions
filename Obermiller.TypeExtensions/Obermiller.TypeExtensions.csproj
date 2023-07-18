@@ -15,6 +15,7 @@
         <Version>1.0.0</Version>
         <Company>Obermiller</Company>
         <Product>Obermiller.TypeExtensions</Product>
+        <LangVersion>latest</LangVersion>
     </PropertyGroup>
 
 </Project>

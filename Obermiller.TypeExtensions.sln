@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Obermiller.TypeExtensions", "Obermiller.TypeExtensions\Obermiller.TypeExtensions.csproj", "{BF33C290-E199-4614-BF9A-99DDF69ED90B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Obermiller.TypeExtensions.Tests", "Obermiller.TypeExtensions.Tests\Obermiller.TypeExtensions.Tests.csproj", "{2207258B-7BD8-4EC2-A79E-53CB5C372E75}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Obermiller.TypeExtensions.Tests", "Obermiller.TypeExtensions.Tests\Obermiller.TypeExtensions.Tests.csproj", "{E60F42CB-3DE7-4878-A1D7-5B9939FC7A29}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,9 +14,9 @@ Global
 		{BF33C290-E199-4614-BF9A-99DDF69ED90B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF33C290-E199-4614-BF9A-99DDF69ED90B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF33C290-E199-4614-BF9A-99DDF69ED90B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2207258B-7BD8-4EC2-A79E-53CB5C372E75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2207258B-7BD8-4EC2-A79E-53CB5C372E75}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2207258B-7BD8-4EC2-A79E-53CB5C372E75}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2207258B-7BD8-4EC2-A79E-53CB5C372E75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E60F42CB-3DE7-4878-A1D7-5B9939FC7A29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E60F42CB-3DE7-4878-A1D7-5B9939FC7A29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E60F42CB-3DE7-4878-A1D7-5B9939FC7A29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E60F42CB-3DE7-4878-A1D7-5B9939FC7A29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
