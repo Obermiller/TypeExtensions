@@ -4,6 +4,8 @@ namespace Obermiller.TypeExtensions.Tests.EnumerableExtensions;
 
 public partial class EnumerableExtensionsTests
 {
+	#region WithIndex
+	
 	[Fact]
 	public void WithIndex_IntList_PairsIndex()
 	{
@@ -25,4 +27,6 @@ public partial class EnumerableExtensionsTests
 			Assert.Equal(i, underTest[i].index);
 		}
 	}
+	
+	#endregion
 }

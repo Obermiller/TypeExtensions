@@ -73,4 +73,54 @@ public partial class StringExtensionsTests
 	}
 
 	#endregion
+	
+	#region SplitToArray
+
+	[Fact]
+	public void SplitToArray_Empty_Empty() => Assert.Empty(string.Empty.SplitToArray<int>(string.Empty));
+	
+	[Fact]
+	public void SplitToArray_NoDelimiter_Empty() => Assert.Empty(Commas.SplitToArray<int>(string.Empty));
+	
+	[Fact]
+	public void SplitToArray_InconsistentInput_Empty() => Assert.Empty(Inconsistent.SplitToArray<int>(string.Empty));
+	
+	[Fact]
+	public void SplitToArray_Single_Splits() => Assert.Equal(new[] { 1 }, One.SplitToArray<int>(string.Empty));
+	
+	[Fact]
+	public void SplitToArray_Commas_Splits() => Assert.Equal(ExpectedArray, Commas.SplitToArray<int>(","));
+
+	[Fact]
+	public void SplitToArray_CommaSpaces_Splits() => Assert.Equal(ExpectedArray, CommaSpaces.SplitToArray<int>(", "));
+	
+	[Fact]
+	public void SplitToArray_Pipes_Splits() => Assert.Equal(ExpectedArray, Pipes.SplitToArray<int>("|"));
+
+	#endregion
+
+	#region SplitToCollection
+
+	[Fact]
+	public void SplitToCollection_Empty_Empty() => Assert.Empty(string.Empty.SplitToCollection<List<int>, int>(string.Empty));
+	
+	[Fact]
+	public void SplitToCollection_NoDelimiter_Empty() => Assert.Empty(Commas.SplitToCollection<List<int>, int>(string.Empty));
+	
+	[Fact]
+	public void SplitToCollection_InconsistentInput_Empty() => Assert.Empty(Inconsistent.SplitToCollection<List<int>, int>(string.Empty));
+	
+	[Fact]
+	public void SplitToCollection_Single_Splits() => Assert.Equal(new List<int> { 1 }, One.SplitToCollection<List<int>, int>(string.Empty));
+	
+	[Fact]
+	public void SplitToCollection_Commas_Splits() => Assert.Equal(ExpectedList, Commas.SplitToCollection<List<int>, int>(","));
+
+	[Fact]
+	public void SplitToCollection_CommaSpaces_Splits() => Assert.Equal(ExpectedList, CommaSpaces.SplitToCollection<List<int>, int>(", "));
+	
+	[Fact]
+	public void SplitToCollection_Pipes_Splits() => Assert.Equal(ExpectedList, Pipes.SplitToCollection<List<int>, int>("|"));
+
+	#endregion
 }
