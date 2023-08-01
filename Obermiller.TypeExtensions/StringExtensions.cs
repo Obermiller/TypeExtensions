@@ -16,6 +16,13 @@ public static class StringExtensions
             .ToArray());
     }
     
+    /// <summary>
+    /// Take a delimited string and split it to an array of generic type.
+    /// </summary>
+    /// <param name="x">Delimited string</param>
+    /// <param name="delimiter">String to split on</param>
+    /// <typeparam name="T">Type to return in array</typeparam>
+    /// <returns>Array of split string cast to determined type</returns>
     public static T[] SplitToArray<T>(this string x, string delimiter)
     {
         var splitString = x.Split(delimiter);
@@ -37,6 +44,14 @@ public static class StringExtensions
         return array;
     }
     
+    /// <summary>
+    /// Take a delimited string and split it to a generic collection of generic type.
+    /// </summary>
+    /// <param name="x">Delimited string</param>
+    /// <param name="delimiter">String to split on</param>
+    /// <typeparam name="TCollection">Collection to return</typeparam>
+    /// <typeparam name="T">Type to return in collection</typeparam>
+    /// <returns>Collection of split string cast to determined type</returns>
     public static TCollection SplitToCollection<TCollection, T>(this string x, string delimiter)
         where TCollection : ICollection<T>, new()
     {
@@ -58,4 +73,26 @@ public static class StringExtensions
 
         return collection;
     }
+
+    #region SplitToCollection - Hardtypes
+
+    /// <summary>
+    /// Take a delimited string and split it to a HashSet of generic type.
+    /// </summary>
+    /// <param name="x">Delimited string</param>
+    /// <param name="delimiter">String to split on</param>
+    /// <typeparam name="T">Type to return in HashSet</typeparam>
+    /// <returns>HashSet of split string cast to determined type</returns>
+    public static HashSet<T> SplitToHashSet<T>(this string x, string delimiter) => x.SplitToCollection<HashSet<T>, T>(delimiter);
+    
+    /// <summary>
+    /// Take a delimited string and split it to a List of generic type.
+    /// </summary>
+    /// <param name="x">Delimited string</param>
+    /// <param name="delimiter">String to split on</param>
+    /// <typeparam name="T">Type to return in List</typeparam>
+    /// <returns>List of split string cast to determined type</returns>
+    public static List<T> SplitToList<T>(this string x, string delimiter) => x.SplitToCollection<List<T>, T>(delimiter);
+
+    #endregion
 }

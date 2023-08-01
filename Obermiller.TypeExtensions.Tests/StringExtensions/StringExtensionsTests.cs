@@ -123,4 +123,18 @@ public partial class StringExtensionsTests
 	public void SplitToCollection_Pipes_Splits() => Assert.Equal(ExpectedList, Pipes.SplitToCollection<List<int>, int>("|"));
 
 	#endregion
+
+	#region SplitToHashSet
+
+	[Fact]
+	public void SplitToHashSet_Commas_ReturnsHashSet() => Assert.IsType<HashSet<int>>(Commas.SplitToHashSet<int>(","));
+
+	#endregion
+	
+	#region SplitToList
+
+	[Fact]
+	public void SplitToList_Commas_ReturnsList() => Assert.IsType<List<int>>(Commas.SplitToList<int>(","));
+
+	#endregion
 }
