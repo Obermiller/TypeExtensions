@@ -3,6 +3,20 @@
 public static class BoolExtensions
 {
     /// <summary>
+    /// Generate bool from int value.
+    /// </summary>
+    /// <param name="x">Int to be analyzed</param>
+    /// <returns>Bool keyed on 1</returns>
+    public static bool FromOneZero(this int x) => x == 1;
+
+    /// <summary>
+    /// Generate int from bool value.
+    /// </summary>
+    /// <param name="x">Bool to be analyzed</param>
+    /// <returns>1 or 0</returns>
+    public static int ToOneZero(this bool x) => x ? 1 : 0;
+    
+    /// <summary>
     /// Generate bool from string value.
     /// Casts to lower invariant.
     /// </summary>

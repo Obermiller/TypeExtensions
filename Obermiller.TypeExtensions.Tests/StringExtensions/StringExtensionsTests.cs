@@ -19,6 +19,9 @@ public partial class StringExtensionsTests
 	[Fact]
 	public void CommaJoin_LengthThree_Joins() => Assert.Equal("1, 2, 3", LengthThree.CommaJoin());
 
+	[Fact]
+	public void CommaJoin_NonString_Joins() => Assert.Equal("1, 2, 3", ExpectedList.CommaJoin());
+
 	#endregion
 
 	#region EqualsIgnoreCase

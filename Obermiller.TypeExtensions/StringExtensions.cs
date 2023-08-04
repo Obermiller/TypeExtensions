@@ -3,11 +3,28 @@
 public static class StringExtensions
 {
     private static readonly Random Random = new();
+
+    /// <summary>
+    /// Join an enumerable of strings with ", "
+    /// </summary>
+    /// <param name="x">Collection of strings</param>
+    /// <typeparam name="T">Type of members in IEnumerable</typeparam>
+    /// <returns>String of elements joined by ", "</returns>
+    public static string CommaJoin<T>(this IEnumerable<T> x) => string.Join(", ", x);
     
-    public static string CommaJoin(this IEnumerable<string> x) => string.Join(", ", x);
-    
+    /// <summary>
+    /// Checks if a string equals another while ignoring casing.
+    /// </summary>
+    /// <param name="x">String to check</param>
+    /// <param name="y">String to check against</param>
+    /// <returns>Boolean based off equality</returns>
     public static bool EqualsIgnoreCase(this string x, string y) => string.Equals(x, y, StringComparison.OrdinalIgnoreCase);
     
+    /// <summary>
+    /// Creates a random string of capital letters and numbers
+    /// </summary>
+    /// <param name="length">Length of string to be generated</param>
+    /// <returns>A randomized string of capital letters and numbers</returns>
     public static string GenerateRandomAlphaNumeric(int length)
     {
         const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";

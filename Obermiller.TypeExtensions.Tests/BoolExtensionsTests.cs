@@ -4,6 +4,32 @@ namespace Obermiller.TypeExtensions.Tests;
 
 public class BoolExtensionsTests
 {
+    #region FromOneZero
+
+    [Fact]
+    public void FromOneZero_1_True() => Assert.True(1.FromOneZero());
+
+    [Fact]
+    public void FromOneZero_0_False() => Assert.False(0.FromOneZero());
+
+    [Fact]
+    public void FromOneZero_2_False() => Assert.False(2.FromOneZero());
+
+    [Fact]
+    public void FromOneZero_11_False() => Assert.False(11.FromOneZero());
+    
+    #endregion
+
+    #region ToOneZero
+
+    [Fact]
+    public void ToOneZero_True_1() => Assert.Equal(1, true.ToOneZero());
+
+    [Fact]
+    public void ToOneZero_False_0() => Assert.Equal(0, false.ToOneZero());
+
+    #endregion
+    
     #region FromYesNo
     
     #region True
