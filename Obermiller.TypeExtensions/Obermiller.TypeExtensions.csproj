@@ -12,7 +12,7 @@
         <PackageProjectUrl>https://github.com/Obermiller/TypeExtensions</PackageProjectUrl>
         <PackageTags>extensions;type-extensions;</PackageTags>
         <PackageId>Obermiller.TypeExtensions</PackageId>
-        <Version>1.0.0</Version>
+        <Version>1.0.2</Version>
         <Company>Obermiller</Company>
         <Product>Obermiller.TypeExtensions</Product>
         <LangVersion>latest</LangVersion>

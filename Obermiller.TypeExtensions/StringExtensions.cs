@@ -1,4 +1,6 @@
-﻿namespace Obermiller.TypeExtensions;
+﻿using System.Text.RegularExpressions;
+
+namespace Obermiller.TypeExtensions;
 
 public static class StringExtensions
 {
@@ -31,6 +33,17 @@ public static class StringExtensions
         return new string(Enumerable.Range(0, length)
             .Select(_ => chars[Random.Next(chars.Length)])
             .ToArray());
+    }
+    
+    /// <summary>
+    /// Sanitize a file name for browser download
+    /// </summary>
+    /// <param name="fileName">String to be sanitized</param>
+    /// <returns>Sanitized string to utilize as file name for browser download</returns>
+    public static string SanitizeFilename(this string fileName)
+    {
+        var invalidString = $"[{Regex.Escape(new string(Path.GetInvalidFileNameChars()))}]+";
+        return Regex.Replace(fileName, invalidString, "_").Replace(";", "").Replace(",", "");
     }
     
     /// <summary>

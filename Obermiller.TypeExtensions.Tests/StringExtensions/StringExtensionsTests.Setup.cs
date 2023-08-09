@@ -2,6 +2,8 @@
 
 public partial class StringExtensionsTests
 {
+	private static string ClevelandBrowns => "Cleveland Browns";
+	
 	#region CommaJoin
 
 	private static IEnumerable<string> Empty => Array.Empty<string>();
@@ -10,8 +12,14 @@ public partial class StringExtensionsTests
 	private static IEnumerable<string> LengthThree => new[] { "1", "2", "3" };
 
 	#endregion
+
+	#region SanitizeFileName
+
+	private const string TestFileName = "Test.zip";
+	private const string TestCommaFileName = "Test,.zip";
+	private const string TestSemicolonFileName = "Test;.zip";
 	
-	private static string ClevelandBrowns => "Cleveland Browns";
+	#endregion
 
 	#region SplitToArray & SplitToCollection
 

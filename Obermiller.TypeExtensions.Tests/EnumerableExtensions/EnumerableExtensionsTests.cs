@@ -4,6 +4,24 @@ namespace Obermiller.TypeExtensions.Tests.EnumerableExtensions;
 
 public partial class EnumerableExtensionsTests
 {
+	#region JoinToString
+
+	[Fact]
+	public void JoinToString_IntList_Joins()
+	{
+		var underTest = IntList.JoinToString(", ");
+        Assert.Equal(IntListJoined, underTest);
+	}
+	
+	[Fact]
+	public void JoinToString_StringList_Joins()
+	{
+		var underTest = StringList.JoinToString(", ");
+		Assert.Equal(StringListJoined, underTest);
+	}
+
+	#endregion
+	
 	#region WithIndex
 	
 	[Fact]

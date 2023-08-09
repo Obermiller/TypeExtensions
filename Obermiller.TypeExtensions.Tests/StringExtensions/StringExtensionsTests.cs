@@ -77,6 +77,19 @@ public partial class StringExtensionsTests
 
 	#endregion
 	
+	#region SanitizeFilename
+
+	[Fact]
+	public void SanitizeFilename_CleanString_Same() => Assert.Equal(TestFileName, TestFileName.SanitizeFilename());
+
+	[Fact]
+	public void SanitizeFilename_ContainsComma_ReplacesComma() => Assert.Equal(TestFileName, TestCommaFileName.SanitizeFilename());
+
+	[Fact]
+	public void SanitizeFilename_ContainsSemicolon_ReplacesSemicolon() => Assert.Equal(TestFileName, TestSemicolonFileName.SanitizeFilename());
+
+	#endregion
+	
 	#region SplitToArray
 
 	[Fact]
