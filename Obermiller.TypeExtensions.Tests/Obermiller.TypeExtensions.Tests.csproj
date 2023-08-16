@@ -26,4 +26,5 @@
       <ProjectReference Include="..\Obermiller.TypeExtensions\Obermiller.TypeExtensions.csproj" />
     </ItemGroup>
 
+
 </Project>
