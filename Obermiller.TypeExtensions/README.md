@@ -13,6 +13,7 @@ At the moment, this package includes methods for:
 - Booleans
 - Classes
 - DateTimes
+- Enums
 - Enumerables
 - Strings
 
